@@ -1,0 +1,90 @@
+These are miscellaneous HEX EDITS.
+
+# Deinterlacing Patch
+
+This removes interlacing from occurring, improving visual quality for modern, non-CRT screens. Use in conjunction with Deinterlacing = None in PCSX2.
+
+Removes sceGsSetHalfOffset Routine
+
+Offset:  4E6ADC
+
+Original: 08 00 42 64
+
+New: 00 00 00 00
+
+
+Offset: 4E6B64
+
+Original: 08 00 42 64
+
+New: 00 00 00 00
+
+
+# JERSEY NUMBERS
+
+### Manually Apply the Number Zero In Game
+Change 06E4D0 to:
+
+00 00 04 24
+
+Change 06ED1C to:
+
+64 00 04 2
+
+
+### Allow & Show Duplicate Numbers as Blue
+
+Change 3516E0 to:
+
+01 00 15 24 11 00 15 17 E0 00 B4 8F 11 E0 80 A6 10 E0 93 A2 0E 00 60 10 2D 88 00 00 07 00 40 12 00 00 A2 87 06 00 50 14 21 10 17 02 FF FF 63 20 00 00 00 00 06 00 60 10 2D 88 00 00 21 10 17 02 10 E0 80 A6 FF 00 02 24 12 E0 82 A2 2D 88 00 00 E9 FF 20 16 2D 20 00 02 2D 10 00 02 80 00 B1 7B 90 00 B0 7B 70 00 B2 7B 60 00 B3 7B 50 00 B4 7B 40 00 B5 7B 30 00 B6 7B 20 00 B7 7B 10 00 BF DF 08 00 E0 03 A0 00 BD 27
+
+## Updated Jersey numbering system
+Change 3BECB0 to:
+
+00 00 62 24
+
+Change 3BECB4 to:
+
+64 00 42 2C
+
+Change 5A9050 to:
+
+07 00 00 00 10 00 00 00 14 00 00 00 1D 00 00 00 28 00 00 00 31 00 00 00 00 00 00 00 06 00 00 00 50 00 00 00 59 00 00 00 46 00 00 00 4F 00 00 00 3C 00 00 00 45 00 00 00 32 00 00 00 3B 00 00 00 3C 00 00 00 45 00 00 00 46 00 00 00 4F 00 00 00 5A 00 00 00 63 00 00 00 5A 00 00 00 63 00 00 00 5A 00 00 00 63 00 00 00 28 00 00 00 3B 00 00 00 28 00 00 00 31 00 00 00 28 00 00 00 3B 00 00 00 00 00 00 00 06 00 00 00 14 00 00 00 1D 00 00 00 14 00 00 00 1D 00 00 00 11 00 00 00 63 00 00 00 11 00 00 00 63 00 00 00 01 00 00 00 13 00 00 00 1E 00 00 00 27 00 00 00 1E 00 00 00 27 00 00 00 11 00 00 00 1D 00 00 00 28 00 00 00 31 00 00 00 3C 00 00 00 45 00 00 00 46 00 00 00 4F 00 00 00 3C 00 00 00 45 00 00 00 46 00 00 00 4F 00 00 00 3C 00 00 00 45 00 00 00 28 00 00 00 3B 00 00 00 28 00 00 00 3B 00 00 00 28 00 00 00 3B 00 00 00 5A 00 00 00 63 00 00 00 32 00 00 00 3B 00 00 00 5A 00 00 00 63 00 00 00 14 00 00 00 1D 00 00 00 01 00 00 00 06 00 00 00 01 00 00 00 06 00 00 00 11 00 00 00 63 00 00 00 11 00 00 00 63 00 00 00 01 00 00 00 13 00 00 00 01 00 00 00 31 00 00 00 14 00 00 00 31 00 00 00 50 00 00 00 59 00 00 00 11 00 00 00 27 00 00 00 32 00 00 00 3B 00 00 00 32 00 00 00 3B 00 00 00 46 00 00 00 4F 00 00 00 32 00 00 00 3B 00 00 00 32 00 00 00 3B 00 00 00 11 00 00 00 1D 00 00 00 11 00 00 00 1D 00 00 00 11 00 00 00 1D 00 00 00 01 00 00 00 06 00 00 00 01 00 00 00 06 00 00 00 01 00 00 00 06 00 00 00 1E 00 00 00 31 00 00 00 1E 00 00 00 31 00 00 00 1E 00 00 00 31 00 00 00 11 00 00 00 63 00 00 00 11 00 00 00 63 00 00 00 
+
+## BCS Ranking Fix WITHOUT editing functions
+
+Change 38FF5C to:
+
+80 00 05 24 09 3C 01 3C
+
+80 is the number of teams + 1 (in this instance it's 127 teams, so we set this value to 128)
+
+09 is a modifier that will need to be adjusted through experimentation so BCS rankings remain 1.000 or less and realistic.  For 127 teams, "09" seems to be a good value.  It will likely need to be different depending on the number of teams.
+
+
+# Rank in Score Overlay
+
+Change 3523E0 to:
+
+3B 00 09 26 43 00 0A 26
+
+UPDATED 8/21/23
+
+Change 352C00 to:
+
+1A 00 02 24 18 F2 19 08 65 00 05 3C
+
+
+Change 352DC0 to:
+
+C3 F2 A5 24
+
+
+UPDATED 8/21/23
+
+Change 57D860 to:
+
+E0 F2 B6 AC 2D 20 00 02 B7 F2 A5 24 CB FF A3 80 1A 00 70 2C 20 20 18 24 02 00 B8 A4 23 00 18 24 00 00 B8 A0 30 00 78 24 0A 00 76 2C 09 00 C0 16 01 00 B8 A0 08 00 18 24 18 00 03 03 6C 00 18 3C F8 26 18 37 12 18 00 00 20 C0 03 03 00 00 03 87 01 00 A3 A4 03 00 53 14 29 00 B6 8C 02 00 00 16 00 00 00 00 04 00 A5 20 03 47 11 08 00 00 00 00
+
+
+Update 8/21/23 : Removed the extra rankings and spacing showing up in other places besides the score board.
