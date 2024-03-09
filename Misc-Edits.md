@@ -88,3 +88,17 @@ E0 F2 B6 AC 2D 20 00 02 B7 F2 A5 24 CB FF A3 80 1A 00 70 2C 20 20 18 24 02 00 B8
 
 
 Update 8/21/23 : Removed the extra rankings and spacing showing up in other places besides the score board.
+
+# Show All "TOUGHEST PLACES TO PLAY" Stadiums
+
+Change 094E7C to:
+
+78 00 08 24
+
+
+Change 094ECC to:
+
+78 00 02 24
+
+
+The bolded 78 can be changed to any value (in hex format) that is equal to 120 or less, but they both must be the same value.
