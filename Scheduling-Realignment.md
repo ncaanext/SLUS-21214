@@ -101,6 +101,38 @@ The "Simulate Through Week %s" finally shows the right week, too.
 -- Updated 2/20/23 --
 The magazine shows the right week.
 
+# Every Game is Televised
+
+Change 00ECB0 to:
+
+91 20 27 47 54 48 47 27 20 97 20 82 20 B8 20 27 47 54 41 47 27 20 97 20 82 20 96 20 27 44 48 43 53 27 20 77 68 65 72 65 20 27 4D 4E 47 53 27 20 3D 20 85 20 B8 20 27 4E 57 45 53 27 20 3D 20 85 0A 00 00 00
+
+UPDATED 12/28/23
+
+Change 3C091C to:
+
+34 00 A2 2C
+
+Sets Number of National Coverage games; counting Game of the Week (I changed it to 11 from 8)
+
+Change 3C0A68 to:
+
+0B 00 A2 2C
+
+
+UPDATED 12/27/23
+
+Change 3C0AA8 to:
+
+D0 FF BD 27 20 00 B0 7F 10 00 B1 7F 00 00 BF FF AC B8 82 97 80 00 10 3C 10 00 05 3C B0 DC A5 34 2D 30 00 02 04 00 C7 20 2D 40 80 00 2D 48 40 00 56 05 16 0C 2D 20 00 00 4B 00 05 3C 20 FB A5 34 2D 30 00 02 56 05 16 0C 00 00 07 8E 00 00 10 8E 02 00 02 2A 02 00 40 10 2D 10 00 00 01 00 02 24 20 00 B0 7B 10 00 B1 7B 00 00 BF DF 08 00 E0 03 30 00 BD 27 00 00 00 00 9F 20 27 44 4E 59 44 27 20 91 20 27 54 43 4E 53 27 20 97 20 85 20 96 20 27 4D 41 45 54 27 20 77 68 65 72 65 20 27 44 49 47 54 27 20 3D 20 85 0A
+
+
+Change 3C0D30 to:
+
+34 00 22 2E
+
+
+
 ## Remove the 14-team Division <Empty String> Error
 (this is in BETA... and probably will be forever)
 
