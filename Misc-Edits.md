@@ -399,3 +399,12 @@ FC FC 90 AF EC FC 91 AF 07 00 10 24 1C 00 B0 14 01 80 71 20 55 95 31 8E 43 45 10
 Change 047678 to:
 
 88 40 01 3C EC 51 21 34 00 78 81 44 B2 40 01 3C
+
+
+# Adds the Ability to Delete ANY Player from the Main Menu Roster Editor
+
+Change 071214 to:
+00 00 00 00
+
+Change 07144C to:
+04 00 06 24
