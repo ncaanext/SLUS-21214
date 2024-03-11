@@ -157,6 +157,15 @@ Change 59F9A8 to:
 18 00 FE 00 12 38 00 00 98 08 F1 28 06 00 20 16 00 00 00 00 98 08 07 24 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 15 5D 12 08 00 00 00 00
 
 
+## See Stats in big Conferences
+Change 3B1734 to:
+81 00 12 3C
+
+## See Stats in big Conferences
+Change 3B1844 to:
+81 00 04 3C
+
+
 ## No PotW during bowl Season/Offseason To fix bug with 14+ conferences
 
 Change 0883C4 to:
