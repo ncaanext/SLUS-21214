@@ -14,21 +14,13 @@ If changing to 2022, change to E6 07.  If changing to 2065, for example, change 
 260430
 35C0A0
 36F718
-06243C
 0727A8
-072EF8
 07E478
-082B28
-08454C
-08CBB0
 203B90
-260430
 314C10
 315274
 3155E8
 356DD0
-35C0A0
-36F718
 382A44
 382FD0
 3835CC
@@ -44,9 +36,7 @@ If changing to 2023, change to E7 07.  If changing to 2066, for example, change 
 
 084540
 08CBA8
-084540
 0856CC
-08CBA8
 314C6C
 3152DC
 315644
