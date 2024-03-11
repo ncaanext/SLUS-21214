@@ -161,7 +161,7 @@ Change 59F9A8 to:
 Change 3B1734 to:
 81 00 12 3C
 
-## See Stats in big Conferences
+
 Change 3B1844 to:
 81 00 04 3C
 
