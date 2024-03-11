@@ -19,6 +19,22 @@ Original: 08 00 42 64
 
 New: 00 00 00 00
 
+# UI Color
+Change Dark Blue Human-Team Text to Dark Yellow
+
+
+Change 474050 to:
+
+
+18 0C 1A 08 00 00 E2 90
+
+
+Change 584060 to:
+
+
+3E 00 03 24 0B 00 43 14 04 00 E3 90 62 00 02 24 08 00 43 14 00 00 E2 90 FF 00 02 24 00 00 E2 A0 D0 00 02 24 04 00 E2 A0 00 00 02 24 08 00 E2 A0 00 00 E2 90 15 CC 15 08 18 00 42 A2 00 00 00 00
+
+Note that the bolded FF, D0, and 00 are actually the RGB codes of the color of the text.  They can be set to anything.
 
 # JERSEY NUMBERS
 
